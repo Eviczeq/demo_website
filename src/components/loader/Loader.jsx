@@ -115,7 +115,7 @@ const Loader = () => {
 
       interval = setInterval(() => {
         setSeconds(seconds => seconds + 1);
-      }, 1);
+      }, 10);
     } else if (!isActive && seconds !== 0) {
       clearInterval(interval);
     }
