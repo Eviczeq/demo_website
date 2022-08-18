@@ -70,7 +70,7 @@ const Footer = () => {
         </Container> 
         <AllRightContainer>
             <AllRightText>
-                ©2022ORBLET INSURANCE Co.,ltd. All Rights Reserved.
+                ©2022火災保険All Rights Reserved.
             </AllRightText>
         </AllRightContainer>
     </Page>  )
