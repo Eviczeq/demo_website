@@ -4,8 +4,11 @@
     "\\src",
     "\\src\\assets",
     "\\src\\components",
+    "\\src\\components\\dummy",
+    "\\src\\components\\dummy2",
+    "\\src\\components\\loader",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\components\\loader\\Loader.jsx",
   "PreviewInSolutionExplorer": false
 }

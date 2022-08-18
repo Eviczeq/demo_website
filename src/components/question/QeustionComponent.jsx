@@ -35,7 +35,7 @@ const Question = styled.p`
 const QeustionComponent = () => {
   return (
     <Container>
-      <Title>Q&A</Title>
+          <Title>火災保険Q＆A</Title>
         <Wrapper >
             <Question>Q.保険会社が色々ありすぎて、どこで選べば良いのかわかりません。</Question>
             <Answer>A.火災保険はどの保険会社で加入してもOkです。私たちが最適な火災保険をご提案いたします。</Answer>
