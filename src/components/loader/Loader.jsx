@@ -110,7 +110,9 @@ const Loader = () => {
   const [isActive, setIsActive] = useState(true);
   useEffect(() => {
     let interval = null;
-    if (isActive) {
+      if (isActive) {
+          setIsActive(true)
+
       interval = setInterval(() => {
         setSeconds(seconds => seconds + 1);
       }, 1);

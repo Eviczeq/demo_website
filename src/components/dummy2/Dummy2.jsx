@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import hoken1 from '../../assets/hoken1.webp';
 import hoken2 from '../../assets/hoken2.webp';
 import hoken3 from '../../assets/hoken3.webp';
-import Slider from "react-slick";
+//import Slider from "react-slick";
 
 
 // ADD CAROUSEL CHOSE LIBRARY https://alvarotrigo.com/blog/react-carousels/ 
@@ -71,7 +71,7 @@ const Text = styled.h4`
   font-size: 15px;
 `
 const dummy = () => {
-  const settings = {
+    {/* const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
@@ -79,10 +79,11 @@ const dummy = () => {
     slidesToShow: 3,
     speed: 500
   };
+   */}
   return (
     <PageTest>
     <TitleTest>ダミータイトル</TitleTest>
-    <ContainerTest> 
+    <ContainerTest>
     {/* <Slider {...settings}>      */}
       <Card>
         <Top>
