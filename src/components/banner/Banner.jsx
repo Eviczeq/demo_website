@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Page = styled.div`
+    z-index: 15;
     height: 20vh;
     position: fixed;
     bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     padding: 20px;
 `
 const Title = styled.button`
@@ -17,7 +17,7 @@ const Title = styled.button`
   padding: 20px;
   border-radius: 50px;
   &:hover{
-    background-color: grey;
+    background-color: #e23232c7;
 
   }
   cursor: pointer;
@@ -48,7 +48,7 @@ const Banner = () => {
   });
   
   return (
-    <Page style={{right: scrollY >400 ? "-999999999999999px" : "0px"}}>
+    <Page style={{right: scrollY >900|| scrollY<400 ? "-999999999999999px" : "0px"}}>
       <Link to="/estimate">
       <Title  >
         <LinkContainer>10秒で火災保険の試算</LinkContainer>

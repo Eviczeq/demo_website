@@ -4,8 +4,9 @@ import { StylesManager, Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import "survey-core/defaultV2.css";
 import { json } from "./json"
-import Header from '../../components/header/Header';
+// import Header from '../../components/header/Header';
 import Navbar from '../../components/navbar/Navbar';
+import Footer from "../../components/footer/Footer";
 
 StylesManager.applyTheme("defaultV2");
 const Service = () => {
@@ -13,9 +14,10 @@ const Service = () => {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Navbar />
       <Survey model={survey} />
+      <Footer/>
     </div>
   )
 }

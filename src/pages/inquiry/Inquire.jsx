@@ -1,10 +1,11 @@
 import React from 'react'
-import Header from '../../components/header/Header';
+// import Header from '../../components/header/Header';
 import Navbar from '../../components/navbar/Navbar';
 // import Banner from '../../components/banner/Banner';
 // import { send } from 'emailjs-com'
 import styled from 'styled-components';
 import shake from '../../assets/shake.svg'
+import Footer from '../../components/footer/Footer';
 
 const Wrapper = styled.div`
   background-color: white;
@@ -112,7 +113,7 @@ const Inquire = () => {
   }
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Navbar />
       <Wrapper>
         <Left>
@@ -180,7 +181,7 @@ const Inquire = () => {
           </Form>
         </Right>
       </Wrapper>
-
+      <Footer/>
 
     </div>
   )

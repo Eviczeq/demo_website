@@ -5,7 +5,7 @@ import {mobile} from '../../responsive'
 export const Container = styled.div`
 
 display: flex;
-  height: 5rem;
+  height: 10vh;
   background-color: ${subBackColor};
   ${mobile({ 
     height: "50px"
@@ -14,7 +14,6 @@ display: flex;
 export const Wrapper = styled.div`
 
   width: 100%;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,22 +22,7 @@ export const Wrapper = styled.div`
   })}
 `;
 
-export const LanguageIconContainer = styled.div`
-    ${mobile({ 
-    display: "none"
-  })}
-`
-export const Language = styled.span`
-  font-size: 14px;
-  cursor: pointer;
-  margin-left: 5px;
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 5px;
-  ${mobile({ 
-    display: "none"
-  })}
-`;
+
 export const Center = styled.div`
   flex: 1;
   align-items: center;
@@ -76,14 +60,4 @@ export const Right = styled.div`
     flex: "2"
   })}
   
-`;
-export const MenuItem = styled.div`
-  font-size: 14px;
-  cursor: pointer;
-  margin-left: 25px;
-  text-transform: uppercase;
-  ${mobile({ 
-    fontSize: "10px",
-    marginLeft: "10px"
-  })}
 `;

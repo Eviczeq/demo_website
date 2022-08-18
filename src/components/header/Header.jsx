@@ -4,13 +4,12 @@ import {Container,Wrapper, Center, LogoImg ,Logo, Right} from './header-styled'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
  const LogoImgBig = styled.img`
-  width: 30%;
+  width: 15%;
 `;
 const Header = () => {
   return (
     <Container>
       <Wrapper>
-
         <Center>
           <LogoImg src={myImage}/>
           <Link to='/' style={{textDecoration:'none', color:'black'}}>
