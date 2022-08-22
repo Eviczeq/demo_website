@@ -63,7 +63,15 @@ const Footer = () => {
         </Center>
         <Right>
             <Title>Contact</Title>
-            <ContactItem><RoomIcon style={{marginRight:"10px"}} />住所</ContactItem>
+            <ContactItem
+                href="https://www.google.com/maps/place/Tokyo/"
+                target="_blank"
+                rel="noopener"
+                primary
+            >
+                <RoomIcon style={{marginRight:"10px"}} />住所
+                
+            </ContactItem>
             <PhoneItem href="tel://"><PhoneIcon style={{marginRight:"10px"}}/>電話番号</PhoneItem>
             <ContactItem><MailOutlineIcon style={{marginRight:"10px"}}/>email</ContactItem>
         </Right>

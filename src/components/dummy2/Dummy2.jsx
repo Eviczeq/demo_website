@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import hoken1 from '../../assets/hoken1.webp';
 import hoken2 from '../../assets/hoken2.webp';
 import hoken3 from '../../assets/hoken3.webp';
-//import Slider from "react-slick";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import './dummy.scss'
+import { Pagination, Navigation,  } from "swiper";
 
-
-// ADD CAROUSEL CHOSE LIBRARY https://alvarotrigo.com/blog/react-carousels/ 
 // LATER ADD INFORMATION TO NEW FILE AND MAP OVER IT 
 //MOVE STYLES TO THE SEPERATE FILE
 
@@ -15,7 +18,6 @@ const PageTest = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   
 `;
 const TitleTest = styled.h1`
@@ -23,7 +25,7 @@ const TitleTest = styled.h1`
 `
 const ContainerTest = styled.div`
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,16 +33,19 @@ const ContainerTest = styled.div`
 
 `;
 const Card= styled.div`
-  width: 250px;
+  width: 80%;
   height: 70%;
   border-radius: 10px;
   box-shadow: 0px 0px 15px -8px black;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: space-around;
   padding: 20px;
   transition: all 1s ease;
-  margin: 0 10px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
   :hover{
       transform: scale(1.1);
   }
@@ -71,20 +76,26 @@ const Text = styled.h4`
   font-size: 15px;
 `
 const dummy = () => {
-    {/* const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500
-  };
-   */}
+
   return (
+    
     <PageTest>
     <TitleTest>ダミータイトル</TitleTest>
     <ContainerTest>
-    {/* <Slider {...settings}>      */}
+    <Swiper
+      spaceBetween={10}
+      slidesPerView={3}
+      centeredSlides={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      loop={true}
+      modules={[Pagination, Navigation]}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>
       <Card>
         <Top>
           <Img src={hoken1}  />
@@ -99,6 +110,8 @@ const dummy = () => {
             </Text>          
         </BottomTest>
       </Card>
+      </SwiperSlide>
+      <SwiperSlide>
       <Card>
         <Top>
           <Img src={hoken2}  />
@@ -112,6 +125,8 @@ const dummy = () => {
             </Text>          
         </BottomTest>
       </Card>
+      </SwiperSlide>
+      <SwiperSlide>
       <Card>
         <Top>
           <Img src={hoken3}  />
@@ -121,10 +136,12 @@ const dummy = () => {
         </CenterTest>
         <BottomTest>
             <Text>
-            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト
+            ダミーテキスト ダミーテキスミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト
             </Text>          
         </BottomTest>
       </Card>
+      </SwiperSlide>
+      <SwiperSlide>
       <Card>
         <Top>
           <Img src={hoken1}  />
@@ -138,6 +155,8 @@ const dummy = () => {
             </Text>          
         </BottomTest>
       </Card>
+      </SwiperSlide>
+            <SwiperSlide>
             <Card>
         <Top>
           <Img src={hoken1}  />
@@ -151,8 +170,11 @@ const dummy = () => {
             </Text>          
         </BottomTest>
       </Card>
-      {/* </Slider > */}
+      </SwiperSlide>
+      </Swiper>
+      
     </ContainerTest>
+   
   </PageTest>
   )
 }

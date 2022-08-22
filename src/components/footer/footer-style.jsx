@@ -100,11 +100,13 @@ export const Right = styled.div`
     height: 100%;
 
 `;
-export const ContactItem = styled.div`
+export const ContactItem = styled.a`
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
     cursor: pointer;
     :hover{
         color: red;
@@ -125,7 +127,15 @@ export const PhoneItem = styled.a`
     transition: all 0.2s ease;
     
 `;
+export const GoogleMap = styled.a`
+    
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 
+    
+`;
 export const Payment = styled.img`
     width: 50%;
     ${mobile({ 

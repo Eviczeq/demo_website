@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\dummy",
     "\\src\\components\\dummy2",
     "\\src\\components\\footer",
     "\\src\\components\\loader",
@@ -11,6 +11,6 @@
     "\\src\\pages\\home",
     "\\src\\pages\\question"
   ],
-  "SelectedNode": "\\src\\components\\loader\\Loader.jsx",
+  "SelectedNode": "\\public\\index.html",
   "PreviewInSolutionExplorer": false
 }
