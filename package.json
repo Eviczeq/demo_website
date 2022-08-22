@@ -21,6 +21,7 @@
     "styled-components": "^5.3.5",
     "survey-react": "^1.9.41",
     "survey-react-ui": "^1.9.41",
+    "swiper": "^6.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
