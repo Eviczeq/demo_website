@@ -3,12 +3,16 @@ import styled from 'styled-components';
 import hoken1 from '../../assets/hoken1.webp';
 import hoken2 from '../../assets/hoken2.webp';
 import hoken3 from '../../assets/hoken3.webp';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import './dummy.scss'
-import { Pagination, Navigation,  } from "swiper";
+// Core modules imports are same as usual
+import { Navigation, Pagination } from 'swiper';
+// Direct React component imports
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+
+// Styles must use direct files imports
+import 'swiper/swiper.scss'; // core Swiper
+import 'swiper/modules/navigation/navigation.scss'; // Navigation module
+import 'swiper/modules/pagination/pagination.scss'; // Pagination module
 
 // LATER ADD INFORMATION TO NEW FILE AND MAP OVER IT 
 //MOVE STYLES TO THE SEPERATE FILE
