@@ -11,6 +11,7 @@ const Navigation = styled.nav`
   top: 10px;
   display: flex;
   height: 10vh;
+  margin-bottom: 20px;
   `;
 const Ul = styled.ul`
   list-style: none;
